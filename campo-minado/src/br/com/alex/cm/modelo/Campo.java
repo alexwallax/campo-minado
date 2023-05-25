@@ -1,5 +1,7 @@
 package br.com.alex.cm.modelo;
 
+import java.util.List;
+
 public class Campo {
 	
 	private final int linha;
@@ -8,6 +10,8 @@ public class Campo {
 	private boolean aberto = false;
 	private boolean mionado = false;
 	private boolean marcado = false;
+	
+	private List<Campo> vizinhos = new ArrayList<>();
 	
 	Campo(int linha, int coluna) {
 		this.linha = linha;
