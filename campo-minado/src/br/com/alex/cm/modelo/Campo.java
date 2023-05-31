@@ -98,7 +98,7 @@ public class Campo {
 	}
 	
 	long minasNaVizinhanca() {
-		return vizinhos.stream().filter(v -> v.minado).cout();
+		return vizinhos.stream().filter(v -> v.minado).count();
 	}
 	
 	void reiniciar() {
